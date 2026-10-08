@@ -37,10 +37,10 @@ export default function ChatInput({
 
   return (
     <div
-      className={`rounded-2xl border p-3 shadow-soft transition-colors ${
+      className={`rounded-2xl border p-3 shadow-soft transition-all ${
         disabled
           ? 'border-charcoal-200 bg-charcoal-50/80 cursor-not-allowed'
-          : 'border-charcoal-200 bg-white'
+          : 'border-charcoal-200 bg-white focus-within:border-emerald-600 focus-within:ring-4 focus-within:ring-emerald-600/15'
       }`}
     >
       <textarea
@@ -53,7 +53,7 @@ export default function ChatInput({
         rows={1}
         placeholder={placeholder}
         aria-label="Ask Pakistan AI"
-        className={`w-full resize-none border-0 bg-transparent p-1 text-[15px] focus:outline-none ${
+        className={`w-full resize-none border-0 bg-transparent p-1 text-[15px] focus:outline-none focus:ring-0 ${
           disabled
             ? 'cursor-not-allowed text-charcoal-400 placeholder:text-charcoal-400'
             : 'text-charcoal-900 placeholder:text-charcoal-400'

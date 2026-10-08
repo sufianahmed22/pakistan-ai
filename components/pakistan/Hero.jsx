@@ -57,7 +57,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.65 }}
           onSubmit={submit}
-          className="mx-auto mt-10 flex max-w-2xl items-center gap-2 rounded-full glass-panel p-2 pl-5"
+          className="mx-auto mt-10 flex max-w-2xl items-center gap-2 rounded-full glass-panel p-2 pl-5 transition-shadow focus-within:ring-4 focus-within:ring-gold-400/30"
         >
           <Search className="h-5 w-5 shrink-0 text-white/50" />
           <input
@@ -65,7 +65,7 @@ export default function Hero() {
             onChange={(e) => setQ(e.target.value)}
             placeholder="Ask anything about Pakistan…"
             aria-label="Ask anything about Pakistan"
-            className="w-full bg-transparent text-white placeholder:text-white/40 focus:outline-none"
+            className="w-full bg-transparent text-white placeholder:text-white/40 focus:outline-none focus:ring-0"
           />
           <button type="submit" className="btn-gold shrink-0 px-5 py-2.5 text-sm">Ask</button>
         </motion.form>

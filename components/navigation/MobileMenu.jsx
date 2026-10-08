@@ -12,7 +12,7 @@ export default function MobileMenu({ open, onClose }) {
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-[90] flex flex-col overflow-y-auto bg-charcoal-950/98 backdrop-blur-xl lg:hidden scrollbar-thin pb-12"
+          className="fixed inset-0 z-[90] flex flex-col overflow-y-auto bg-charcoal-950 lg:hidden scrollbar-thin pb-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -21,7 +21,7 @@ export default function MobileMenu({ open, onClose }) {
           aria-label="Mobile navigation"
         >
           {/* Header */}
-          <div className="sticky top-0 z-20 flex items-center justify-between border-b border-white/10 bg-charcoal-950/90 px-6 py-4 backdrop-blur-md">
+          <div className="sticky top-0 z-20 flex items-center justify-between border-b border-white/10 bg-charcoal-950 px-6 py-4">
             <span className="font-display text-xl font-bold text-white">{APP_NAME}</span>
             <button
               onClick={onClose}
