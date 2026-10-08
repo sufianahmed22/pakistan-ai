@@ -382,7 +382,7 @@ export default function History() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search events (e.g. Independence, 1965, Constitution, Nuclear, CPEC)..."
-                className="w-full rounded-xl border border-white/10 bg-white/5 py-1.5 pl-9 pr-8 text-xs sm:text-sm text-white placeholder-charcoal-400 focus:border-gold-400 focus:outline-none focus:ring-1 focus:ring-gold-400"
+                className="w-full rounded-xl border border-white/10 bg-white/5 py-1.5 pl-9 pr-8 text-xs sm:text-sm text-white placeholder-charcoal-400 focus:border-gold-400 focus:outline-none focus:ring-4 focus:ring-gold-400/20"
               />
               {search && (
                 <button

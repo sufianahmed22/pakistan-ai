@@ -103,7 +103,7 @@ export default function DashboardSaved() {
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search saved items..."
-              className="w-full rounded-xl border border-charcoal-200 bg-white py-1.5 pl-9 pr-3 text-sm text-charcoal-800 placeholder-charcoal-400 focus:border-emerald-600 focus:outline-hidden focus:ring-1 focus:ring-emerald-600"
+              className="w-full rounded-xl border border-charcoal-200 bg-white py-1.5 pl-9 pr-3 text-sm text-charcoal-800 placeholder-charcoal-400 focus:border-emerald-600 focus:outline-hidden focus:ring-4 focus:ring-emerald-600/15"
             />
           </div>
         )}

@@ -17,7 +17,7 @@ const Input = forwardRef(function Input({ label, error, helperText, className, i
         value={value !== undefined ? (value ?? '') : undefined}
         className={cn(
           'input-field',
-          error && 'border-red-500 focus:border-red-600 focus:ring-1 focus:ring-red-500 bg-red-50/30 dark:bg-red-950/20',
+          error && 'border-red-500 focus:border-red-600 focus:ring-4 focus:ring-red-500/15 bg-red-50/30 dark:bg-red-950/20',
           className
         )}
         aria-invalid={!!error}

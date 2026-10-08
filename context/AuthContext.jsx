@@ -1,7 +1,7 @@
 import { createContext, useCallback, useEffect, useState } from 'react';
 import { toast } from 'sonner';
 import authService from '../services/authService';
-import { setUnauthorizedHandler } from '../services/api';
+import { setUnauthorizedHandler, setAuthToken } from '../services/api';
 
 export const AuthContext = createContext(null);
 
@@ -15,6 +15,7 @@ export function AuthProvider({ children }) {
       setUser(me?.user || me || null);
     } catch {
       setUser(null);
+      setAuthToken(null);
     } finally {
       setLoading(false);
     }
@@ -22,12 +23,16 @@ export function AuthProvider({ children }) {
 
   useEffect(() => {
     loadMe();
-    setUnauthorizedHandler(() => setUser(null));
+    setUnauthorizedHandler(() => {
+      setUser(null);
+      setAuthToken(null);
+    });
   }, [loadMe]);
 
   const login = async (payload) => {
     const res = await authService.login(payload);
     setUser(res?.user || res);
+    setAuthToken(res?.token);
     toast.success('Welcome back!');
     return res;
   };
@@ -35,6 +40,7 @@ export function AuthProvider({ children }) {
   const loginWithGoogle = async (credential) => {
     const res = await authService.googleLogin(credential);
     setUser(res?.user || res);
+    setAuthToken(res?.token);
     toast.success('Welcome back!');
     return res;
   };
@@ -42,6 +48,7 @@ export function AuthProvider({ children }) {
   const register = async (payload) => {
     const res = await authService.register(payload);
     setUser(res?.user || res);
+    setAuthToken(res?.token);
     toast.success('Account created — welcome to Pakistan AI!');
     return res;
   };
@@ -53,6 +60,7 @@ export function AuthProvider({ children }) {
       /* ignore network errors on logout */
     }
     setUser(null);
+    setAuthToken(null);
     toast.success('Logged out');
   };
 

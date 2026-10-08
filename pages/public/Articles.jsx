@@ -115,7 +115,7 @@ export default function Articles() {
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search articles by title or keyword…"
-                className="w-full rounded-xl border border-charcoal-200 bg-white py-2 pl-9 pr-3 text-xs text-charcoal-900 placeholder-charcoal-400 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600/20"
+                className="w-full rounded-xl border border-charcoal-200 bg-white py-2 pl-9 pr-3 text-xs text-charcoal-900 placeholder-charcoal-400 shadow-sm focus:border-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-600/15"
               />
             </div>
           </div>
