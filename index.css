@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-offwhite text-charcoal-900;
+  }
+  ::selection {
+    @apply bg-emerald-200 text-emerald-900;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-emerald-600 ring-offset-2 ring-offset-offwhite;
+  }
+}
+
+@layer components {
+  /* Typography hierarchy */
+  .text-hero {
+    @apply font-display font-bold tracking-tight text-3xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1];
+  }
+  .text-h1 {
+    @apply font-display font-bold tracking-tight text-3xl sm:text-4xl md:text-5xl leading-tight;
+  }
+  .text-h2 {
+    @apply font-display font-semibold tracking-tight text-3xl sm:text-4xl leading-tight;
+  }
+  .text-h3 {
+    @apply font-display font-semibold text-2xl sm:text-3xl leading-snug;
+  }
+  .text-h4 {
+    @apply font-display font-semibold text-xl sm:text-2xl leading-snug;
+  }
+  .text-body-lg {
+    @apply font-body text-lg leading-relaxed text-charcoal-600;
+  }
+  .text-body {
+    @apply font-body text-base leading-relaxed text-charcoal-600;
+  }
+  .text-caption {
+    @apply font-body text-sm text-charcoal-400 tracking-wide;
+  }
+  .text-eyebrow {
+    @apply font-body text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700;
+  }
+
+  /* Layout helpers */
+  .section {
+    @apply px-6 sm:px-10 lg:px-16 py-20 sm:py-28;
+  }
+  .container-narrow {
+    @apply max-w-4xl mx-auto;
+  }
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+
+  /* Surfaces */
+  .glass-panel {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20 shadow-glass;
+  }
+  .glass-panel-light {
+    @apply bg-white/70 backdrop-blur-xl border border-white/60 shadow-soft;
+  }
+  .card {
+    @apply bg-white rounded-2xl border border-charcoal-100 shadow-soft;
+  }
+  .card-dark {
+    @apply bg-charcoal-900 text-white rounded-2xl border border-charcoal-800;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-300 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-primary {
+    @apply btn bg-emerald-700 text-white px-6 py-3 hover:bg-emerald-800 shadow-soft hover:shadow-lg hover:-translate-y-0.5;
+  }
+  .btn-secondary {
+    @apply btn bg-white text-charcoal-900 px-6 py-3 border border-charcoal-200 hover:border-emerald-700 hover:text-emerald-700;
+  }
+  .btn-gold {
+    @apply btn bg-gold-500 text-charcoal-900 px-6 py-3 hover:bg-gold-400 shadow-soft;
+  }
+  .btn-ghost {
+    @apply btn bg-transparent text-white px-6 py-3 border border-white/40 hover:bg-white/10;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-colors cursor-pointer;
+  }
+
+  .input-field {
+    @apply w-full rounded-xl border border-charcoal-200 bg-white px-4 py-3 text-base text-charcoal-900 placeholder:text-charcoal-400 focus:border-emerald-600 focus:outline-none focus:ring-1 focus:ring-emerald-600 transition-colors;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold;
+  }
+}
+
+@layer utilities {
+  .bg-noise::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: theme('backgroundImage.grain');
+    pointer-events: none;
+  }
+  .text-gradient-gold {
+    background: linear-gradient(90deg, #ecd894, #c4922c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar { width: 6px; height: 6px; }
+  .scrollbar-thin::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 999px; }
+}
+
+/* GTranslate floating widget bottom-left positioning */
+.gt_float_switcher {
+  left: 20px !important;
+  right: auto !important;
+  bottom: 20px !important;
+  top: auto !important;
+  z-index: 9990 !important;
+  border-radius: 25px !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
+@media (max-width: 640px) {
+  .gt_float_switcher {
+    left: 14px !important;
+    bottom: 14px !important;
+  }
+}
+
+
