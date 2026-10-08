@@ -16,9 +16,9 @@ import FinalCTA from '../../components/pakistan/FinalCTA';
 // import ProvincesSection from '../../components/pakistan/ProvincesSection';
 // import GeographySection from '../../components/pakistan/GeographySection';
 // import TimelineSection from '../../components/pakistan/TimelineSection';
-// import CultureFoodTeaser from '../../components/pakistan/CultureFoodTeaser';
-// import PopularQuestions from '../../components/pakistan/PopularQuestions';
-// import TelegramCTA from '../../components/pakistan/TelegramCTA';
+import CultureFoodTeaser from '../../components/pakistan/CultureFoodTeaser';
+import PopularQuestions from '../../components/pakistan/PopularQuestions';
+import TelegramCTA from '../../components/pakistan/TelegramCTA';
 
 export default function Home() {
   return (
@@ -79,11 +79,11 @@ export default function Home() {
       {/* 4. Top destinations & travel highlights */}
       <DestinationsSection />
 
-      {/* Commented out secondary sections
+      {/* Commented out secondary sections*/}
       <CultureFoodTeaser />
       <PopularQuestions />
       <TelegramCTA />
-      */}
+      
 
       {/* 5. Creator & Developer Section */}
       <DeveloperSection />
