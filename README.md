@@ -1,122 +1,146 @@
-# 🇵🇰 Pakistan AI — Backend API & Services
+# 🇵🇰 Pakistan AI — Web Frontend
 
-The official Node.js / Express backend service powering the **Pakistan AI** ecosystem. Provides a high-performance REST API, Retrieval-Augmented Generation (RAG) AI assistant, Telegram bot integration, support ticketing, entity content management, and scheduled background workers.
+The official React client application for **Pakistan AI**. A modern, responsive web portal providing interactive AI conversations, cultural and geographical exploration, user bookmarks, support tickets, and an administrative management dashboard.
 
 ---
 
 ## 📋 Table of Contents
 
-- [Architecture Overview](#architecture-overview)
+- [Overview & Experience](#overview--experience)
 - [Key Features](#key-features)
 - [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
 - [Environment Configuration](#environment-configuration)
-- [Installation & Local Setup](#installation--local-setup)
-- [Database Seeding](#database-seeding)
-- [Deployment on Render](#deployment-on-render)
-- [Telegram Bot & Webhook Configuration](#telegram-bot--webhook-configuration)
-- [API Route Directory](#api-route-directory)
-- [Health Check & Monitoring](#health-check--monitoring)
-- [Security & Rate Limiting](#security--rate-limiting)
+- [Installation & Local Development](#installation--local-development)
+- [Building for Production](#building-for-production)
+- [Deployment on Netlify](#deployment-on-netlify)
+- [User & Admin Roles](#user--admin-roles)
+- [PWA & Service Worker](#pwa--service-worker)
 
 ---
 
-## 🏛️ Architecture Overview
+## 🎨 Overview & Experience
 
-The backend is built around a modular MVC/Service pattern:
-- **`routes/`**: Express route definitions with input validation and rate limiting.
-- **`controllers/`**: HTTP request unwrapping, response formatting, and status code assignment.
-- **`services/`**: Core business logic, OpenAI integration, database interactions, and Telegram bot routines.
-- **`models/`**: Mongoose schemas enforcing relational-like indexes and data validation.
-- **`jobs/`**: Node-cron scheduled workers for knowledge base refresh, analytics aggregation, and data cleanup.
-- **`validators/`**: Zod schemas validating all incoming request payloads before reaching controllers.
+The Pakistan AI frontend is crafted with a Pakistan-inspired aesthetic featuring deep emerald greens, warm gold accents, clean typography, dark/light theme switching, and smooth Framer Motion micro-interactions.
+
+Designed to be mobile-first, high-performance, and accessible, the application connects directly to the Express backend API.
 
 ---
 
 ## ✨ Key Features
 
-1. **AI Knowledge Engine (RAG)**:
-   - Uses OpenAI (`gpt-4o-mini` and `text-embedding-3-small`) to answer queries regarding Pakistan's history, culture, tourism, economy, geography, and current affairs.
-   - Vector and keyword matching for fast, accurate context retrieval.
-   - Tiered rate-limiting: Guests (3 questions), Logged-in users (10 questions), Admins (configurable).
+1. **AI Chat Experience (`/ask`)**:
+   - Interactive chat interface powered by the backend RAG knowledge engine.
+   - Categorized query suggestions (History, Culture, Tourism, Geography, Governance, Economy).
+   - Source citations and verified knowledge references attached to AI answers.
+   - Support for guest access (3 questions) and authenticated tier (10 questions).
 
-2. **Authentication & Multi-Factor Access**:
-   - JWT-based authentication stored in secure HTTP-only cookies or Bearer headers.
-   - Google OAuth integration with automatic account linking.
-   - Backup password setting for Google accounts (allowing login even if Google services are unavailable).
-   - Atomic password hashing via `bcryptjs` (12 salt rounds).
+2. **Exploration & Discovery**:
+   - **Destinations & Cities**: Detailed travel guides, regional tags, best visiting seasons, and photo galleries.
+   - **Geography & Natural Wonders**: Dedicated indexes for mountain peaks (K2, Broad Peak) and rivers with interactive details.
+   - **History Timeline**: Chronological era cards from Indus Valley and Gandhara to the Mughal era and modern Pakistan.
+   - **Live Data**: Real-time weather, air quality indexes, currency exchange calculators, and national holiday calendars.
 
-3. **Telegram Bot Service**:
-   - 1-on-1 private chat support directly through Telegram.
-   - Strict, atomic 5-message free trial per Telegram user (concurrency race-condition protected).
-   - Secure webhook receiver with `X-Telegram-Bot-Api-Secret-Token` validation.
-   - Automatic referral link back to the web application for unlimited chat.
+3. **User Dashboard (`/dashboard`)**:
+   - **Overview**: Recent activity, saved places count, and shortcut actions.
+   - **Profile**: Name, avatar, and contact email.
+   - **Saved Places**: Bookmarked destinations and cities with 1-click toggling.
+   - **Chat History**: Browse and resume past AI conversations.
+   - **Support & Messages**: View status of support tickets and reply directly to admin inquiry threads.
+   - **Security Settings**: Set or change passwords (including setting a backup password for accounts created via Google login).
 
-4. **Content & Discovery Engine**:
-   - Full CRUD APIs for Destinations, Cities, Provinces/Regions, Mountains, Rivers, Historical Eras, Facts, and FAQs.
-   - Community reviews with user submission, reporting, and admin moderation workflows.
-   - User bookmarks/saved places and synchronized search/view history.
+4. **Admin Dashboard (`/admin`)**:
+   - Full CRUD management of Destinations, Cities, Regions, Mountains, Rivers, Historical Eras, and Facts.
+   - Knowledge Base inspector with vector status and manual refresh triggering.
+   - Review moderation workflows (approve, reject, or flag community reviews).
+   - Support ticket handling with Telegram forwarding and threaded staff replies.
+   - Telegram user tracking and message quota monitoring.
+   - Traffic metrics, popular search query charts, and system settings editor.
 
-5. **Support & Inquiries**:
-   - Auto-escalating support tickets when users request human assistance in chat.
-   - Threaded contact inquiry messaging between clients and admins.
+5. **SEO & Structured Data**:
+   - Dynamic meta tags, OpenGraph previews, JSON-LD Schema.org structured data, and auto-linked sitemap/robots directives.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Runtime**: Node.js (>= 18.18)
-- **Framework**: Express 4.19 (ES Modules)
-- **Database**: MongoDB with Mongoose ODM (MongoDB Atlas recommended)
-- **AI & Embeddings**: OpenAI API (`openai@^4.56.0`)
-- **Telegram Bot**: Telegraf 4.16
-- **Validation**: Zod 3.23
-- **Security**: Helmet, express-mongo-sanitize, express-rate-limit, bcryptjs, jsonwebtoken
-- **Scheduling**: node-cron
+- **Framework**: [React 18](https://react.dev/)
+- **Build Tool**: [Vite 5](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS 3](https://tailwindcss.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Motion & Transitions**: [Framer Motion](https://www.framer.com/motion/)
+- **Charts & Graphs**: [Recharts](https://recharts.org/)
+- **Markdown Rendering**: [React Markdown](https://github.com/remarkjs/react-markdown)
+- **Form Utilities**: React Hook Form
+- **Authentication**: Native JWT Cookie / Bearer integration + Google Identity Services
+
+---
+
+## 📁 Project Structure
+
+```text
+Frontend/
+├── components/          # Reusable UI components (Navbar, Footer, Modals, Cards)
+│   ├── admin/           # Admin-specific tables, forms, and metric widgets
+│   ├── chat/            # Chat bubbles, input box, suggested prompts
+│   ├── common/          # Buttons, Badges, Tabs, Dialogs, Spinners
+│   ├── layout/          # Page headers, navigation wrappers, sidebars
+│   └── user/            # User profile forms and account widgets
+├── config/              # App constants and environment bindings
+├── constants/           # Pakistan categories, provinces, and navigation links
+├── context/             # Global providers (AuthContext, ThemeContext, ToastContext)
+├── hooks/               # Custom React hooks (useAuth, useToast, useDebounce)
+├── layouts/             # MainLayout, DashboardLayout, AdminLayout
+├── pages/               # Top-level page views (Public, User, Admin)
+│   ├── admin/           # 15+ Admin views (Overview, Knowledge, Cities, Tickets...)
+│   ├── public/          # Home, Ask, Destinations, Cities, History, Stats, etc.
+│   └── user/            # Dashboard Overview, Profile, Saved, Settings
+├── public/              # Static assets, favicon, robots.txt, sitemap, sw.js
+│   └── _redirects       # Netlify Single-Page-App redirect rule
+├── routes/              # App router (Protected routes, Admin routes, Lazy-loaded views)
+├── services/            # Axios/Fetch API callers matching Backend endpoints
+├── utils/               # Formatting, image placeholders, class mergers (clsx/tailwind-merge)
+├── index.html           # HTML entrypoint with metadata and fonts
+├── main.jsx             # React DOM root initialization
+├── tailwind.config.js   # Custom colors (emerald, amber, slate) and animations
+└── vite.config.js       # Vite bundle configuration with vendor code-splitting
+```
 
 ---
 
 ## 📦 Prerequisites
 
 - **Node.js**: v18.18.0 or higher
-- **MongoDB**: Connection URI (Local instance or free MongoDB Atlas cluster)
-- **OpenAI API Key**: For AI question answering (optional in local development)
-- **Telegram Bot Token**: From [@BotFather](https://t.me/BotFather) (optional if not using the bot)
+- **npm** or **yarn** / **pnpm**
+- **Running Backend API**: The backend server running locally (`http://localhost:5000`) or deployed on Render.
 
 ---
 
 ## ⚙️ Environment Configuration
 
-Copy `.env.example` to `.env` in the `Backend/` folder:
+Copy `.env.example` to `.env` in the `Frontend/` folder:
 
 ```bash
 cp .env.example .env
 ```
 
-### Essential Environment Variables
+### Environment Variables
 
 | Variable | Description | Example / Default |
 | :--- | :--- | :--- |
-| `PORT` | Local server port | `5000` |
-| `NODE_ENV` | Environment mode | `development` or `production` |
-| `MONGODB_URI` | MongoDB connection URI | `mongodb+srv://...` |
-| `JWT_SECRET` | Secret key for signing JWT tokens | `min-32-chars-random-string` |
-| `COOKIE_SECRET` | Cookie signing secret | `random-cookie-secret` |
-| `SITE_URL` | Frontend client URL (for CORS & bot links) | `http://localhost:5173` |
-| `CORS_ORIGIN` | Comma-separated allowed origins | `http://localhost:5173,https://your-site.netlify.app` |
-| `OPENAI_API_KEY` | OpenAI API key | `sk-...` |
-| `TELEGRAM_BOT_TOKEN` | Token provided by @BotFather | `123456789:ABC...` |
-| `TELEGRAM_WEBHOOK_URL`| Public HTTPS URL of backend (for webhooks) | `https://your-backend.onrender.com` |
-| `TELEGRAM_WEBHOOK_SECRET` | Secret token verified on webhook delivery | `random-secure-secret-token` |
-| `GOOGLE_CLIENT_ID` | Google OAuth Client ID | `your-id.apps.googleusercontent.com` |
+| `VITE_SITE_URL` | Public frontend URL | `http://localhost:5173` |
+| `VITE_API_URL` | Base URL of backend API | `http://localhost:5000/api` |
+| `VITE_GOOGLE_CLIENT_ID` | Google OAuth Client ID | `your-id.apps.googleusercontent.com` |
+| `VITE_TELEGRAM_BOT_USERNAME` | Telegram bot username (without @) | `pakistan_ai_bot` |
 
 ---
 
-## 🚀 Installation & Local Setup
+## 🚀 Installation & Local Development
 
-1. **Navigate to the Backend directory**:
+1. **Navigate to the Frontend directory**:
    ```bash
-   cd Backend
+   cd Frontend
    ```
 
 2. **Install dependencies**:
@@ -124,141 +148,71 @@ cp .env.example .env
    npm install
    ```
 
-3. **Start the development server with live reload**:
+3. **Start the local development server**:
    ```bash
    npm run dev
    ```
 
-4. **Start in production mode**:
-   ```bash
-   npm run start
-   ```
-
-The server will initialize on `http://localhost:5000`.
-
----
-
-## 🗄️ Database Seeding
-
-Run predefined seed scripts to populate initial data and create the default admin account:
-
-```bash
-# Seed initial admin user (admin@pakistan-ai.app / 123456)
-npm run seed:admin
-
-# Populate all knowledge, cities, destinations, history, and facts
-npm run seed
-
-# Synchronize economic and demographic statistics from World Bank API
-npm run sync:worldbank
-
-# Synchronize country metadata from REST Countries
-npm run sync:restcountries
-```
-
----
-
-## ☁️ Deployment on Render
-
-1. Create a **New Web Service** on [Render](https://render.com).
-2. Connect your repository and configure the settings:
-   - **Root Directory**: `Backend`
-   - **Runtime**: `Node`
-   - **Build Command**: `npm install`
-   - **Start Command**: `npm run start`
-   - **Health Check Path**: `/health`
-3. Add the **Environment Variables** matching your `.env` configuration.
-4. **Keeping Free Instances Active**:
-   - Render's free tier spins down web services after 15 minutes of inactivity.
-   - Use a free uptime monitor (e.g., [Cron-Job.org](https://cron-job.org) or [UptimeRobot](https://uptimerobot.com)) to send a `GET` request every 10–14 minutes to:
-     ```text
-     https://your-backend.onrender.com/health
-     ```
-
----
-
-## 🤖 Telegram Bot & Webhook Configuration
-
-When hosting on Render or any public HTTPS server:
-
-1. Obtain your Bot Token from [@BotFather](https://t.me/BotFather).
-2. Set `TELEGRAM_BOT_TOKEN` in your environment.
-3. Set `TELEGRAM_WEBHOOK_URL=https://your-backend.onrender.com`.
-4. *(Recommended)* Set `TELEGRAM_WEBHOOK_SECRET` to any random 32-character string.
-5. On boot, the server registers the webhook automatically at:
+4. **Open in browser**:
    ```text
-   https://your-backend.onrender.com/api/telegram/webhook
+   http://localhost:5173
    ```
-6. The bot allows any user to send up to **5 free questions** in private chat before presenting a friendly link to the website for unlimited chatting.
 
 ---
 
-## 🛣️ API Route Directory
+## 🏗️ Building for Production
 
-All API endpoints are mounted under `/api`:
-
-| Base Path | Description | Access |
-| :--- | :--- | :--- |
-| `/health` | Server & Database Health status | Public |
-| `/api/auth` | Register, login, Google OAuth, set/change password | Mixed |
-| `/api/chat` | AI knowledge conversation pipeline | Guest / User / Admin |
-| `/api/destinations` | Tourist destinations & attractions | Public / Admin |
-| `/api/cities` | Major cities of Pakistan | Public / Admin |
-| `/api/regions` | Provinces and territories | Public / Admin |
-| `/api/mountains` | Peaks and mountain ranges (K2, Nanga Parbat, etc.) | Public / Admin |
-| `/api/rivers` | Major rivers and waterways | Public / Admin |
-| `/api/history` | Historical timeline and eras | Public / Admin |
-| `/api/facts` | General facts and trivia | Public / Admin |
-| `/api/faqs` | Frequently asked questions | Public / Admin |
-| `/api/statistics` | Economic, demographic, and geographical stats | Public / Admin |
-| `/api/reviews` | Community reviews, ratings, and reports | Authenticated |
-| `/api/saved` | Bookmarked / saved places and cities | Authenticated |
-| `/api/contact` | Contact form inquiries and threaded messaging | Public / User / Admin |
-| `/api/tickets` | Support tickets with human agent routing | Public / User / Admin |
-| `/api/telegram/webhook` | Incoming Telegram Bot API updates | Telegram only (Secret verified) |
-| `/api/admin/*` | Administrative dashboards, settings, and metrics | Admin / Staff only |
-
----
-
-## 💓 Health Check & Monitoring
-
-The backend exposes an informative health endpoint at `/health` and `/api/health`:
+Compile and optimize assets with vendor chunk splitting:
 
 ```bash
-curl https://your-backend.onrender.com/health
+npm run build
 ```
 
-**Example Response:**
-```json
-{
-  "success": true,
-  "data": {
-    "status": "healthy",
-    "timestamp": "2026-10-08T17:30:00.000Z",
-    "uptime": "12h 45m 10s",
-    "uptimeSeconds": 45910,
-    "environment": "production",
-    "database": {
-      "status": "connected",
-      "readyState": 1
-    },
-    "system": {
-      "heapUsedMB": 68.4,
-      "heapTotalMB": 95.2,
-      "rssMB": 124.8
-    }
-  }
-}
+The production bundles will be written to the `dist/` directory.
+
+To preview the production build locally:
+```bash
+npm run preview
 ```
 
 ---
 
-## 🛡️ Security & Rate Limiting
+## ☁️ Deployment on Netlify
 
-- **Rate Limits**:
-  - `authLimiter`: Max 20 attempts per 15 minutes on password/login endpoints in production.
-  - `chatLimiter`: Tiered access per 15-minute window (Guests: 3, Logged-in: 10, Admin: 30+).
-  - `reviewLimiter`: Max 10 reviews/contacts/tickets per minute.
-  - `generalLimiter`: 300 requests per 15 minutes across all general API routes.
-- **Sanitization**: All MongoDB queries are sanitized with `express-mongo-sanitize` against NoSQL injection.
-- **Headers**: Secured with `helmet` and custom `CORS` origin verification.
+### Method 1: Git Integration (Recommended)
+
+1. Push your project to GitHub / GitLab / Bitbucket.
+2. In [Netlify](https://www.netlify.com/), click **Add new site** > **Import an existing project**.
+3. Select your repository and configure:
+   - **Base directory**: `Frontend`
+   - **Build command**: `npm run build`
+   - **Publish directory**: `dist`
+4. In **Site Configuration > Environment Variables**, add:
+   - `VITE_API_URL`: `https://your-backend.onrender.com/api`
+   - `VITE_SITE_URL`: `https://your-site.netlify.app`
+   - `VITE_GOOGLE_CLIENT_ID`: Your Google OAuth Client ID
+   - `VITE_TELEGRAM_BOT_USERNAME`: Your bot username
+5. Click **Deploy Site**.
+
+### Single Page App (SPA) Routing
+The file `Frontend/public/_redirects` is already included:
+```text
+/*    /index.html   200
+```
+This ensures direct URLs (e.g., `/destinations`, `/dashboard/settings`, `/ask`) load seamlessly without Netlify 404 errors on page refresh.
+
+---
+
+## 👥 User & Admin Roles
+
+- **Guest**: Access public pages and send up to 3 AI questions.
+- **Registered User**: Log in with Email or Google, send up to 10 questions per window, bookmark places, view conversation history, and submit reviews.
+- **Admin / Staff**: Full access to the `/admin` portal to edit entities, manage tickets, refresh AI knowledge, and configure system settings. Default seeded credentials:
+  - **Email**: `admin@pakistan-ai.app`
+  - **Password**: `123456`
+
+---
+
+## 📱 PWA & Service Worker
+
+A service worker (`public/sw.js`) is bundled to support caching static assets and handling background push notifications (configured in the Admin Notification center).
