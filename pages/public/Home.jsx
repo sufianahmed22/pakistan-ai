@@ -8,8 +8,8 @@ import DeveloperSection from '../../components/pakistan/DeveloperSection';
 import FinalCTA from '../../components/pakistan/FinalCTA';
 
 // Secondary sections preserved for optional future use
-// import CurrencyTickerSection from '../../components/pakistan/CurrencyTickerSection';
-// import HolidaysCard from '../../components/widgets/HolidaysCard';
+import CurrencyTickerSection from '../../components/pakistan/CurrencyTickerSection';
+import HolidaysCard from '../../components/widgets/HolidaysCard';
 // import ExploreGrid from '../../components/pakistan/ExploreGrid';
 // import MapSection from '../../components/pakistan/MapSection';
 // import PopulationSection from '../../components/pakistan/PopulationSection';
@@ -59,10 +59,10 @@ export default function Home() {
       {/* 2. Key essential numbers at a glance */}
       <GlanceSection />
 
-      {/* Commented out secondary sections to keep home page concise
+      {/* Commented out secondary sections to keep home page concise*/}
       <CurrencyTickerSection />
       <HolidaysCard />
-      */}
+      
 
       {/* 3. AI conversation prompt / teaser */}
       <AskTeaser />
