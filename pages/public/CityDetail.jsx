@@ -33,7 +33,7 @@ export default function CityDetail() {
                 name: city.name,
                 description: city.description,
                 geo: city.coordinates ? { lat: city.coordinates.lat, lng: city.coordinates.lng } : undefined,
-                address: { region: city.province, locality: city.name },
+                address: { region: city.region?.name, locality: city.name },
               }
             : undefined
         }
@@ -64,7 +64,7 @@ export default function CityDetail() {
                     <p className="text-eyebrow !text-gold-300 mb-2">City</p>
                     <h1 className="text-h1">{city.name}</h1>
                     <div className="mt-2 flex flex-wrap items-center gap-4 text-white/70">
-                      {city.province && <p>{city.province}</p>}
+                      {city.region?.name && <p>{city.region.name}</p>}
                       {city.ratingCount > 0 && (
                         <p className="flex items-center gap-2">
                           <RatingStars value={city.avgRating} />
@@ -106,7 +106,7 @@ export default function CityDetail() {
                     <h3 className="text-h4 mb-4">Statistics</h3>
                     <dl className="space-y-3 text-sm">
                       <div className="flex justify-between"><dt className="text-charcoal-400">Population</dt><dd className="font-semibold">{city.population ? formatCompactNumber(city.population) : '—'}</dd></div>
-                      <div className="flex justify-between"><dt className="text-charcoal-400">Province</dt><dd className="font-semibold">{city.province || '—'}</dd></div>
+                      <div className="flex justify-between"><dt className="text-charcoal-400">Province</dt><dd className="font-semibold">{city.region?.name || '—'}</dd></div>
                       <div className="flex justify-between"><dt className="text-charcoal-400">Elevation</dt><dd className="font-semibold">{city.elevation ? `${city.elevation} m` : '—'}</dd></div>
                     </dl>
                     {city.statsYear && <p className="text-caption mt-3">As of {city.statsYear}</p>}

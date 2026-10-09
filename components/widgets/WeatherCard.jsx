@@ -6,7 +6,10 @@ import externalService from '../../services/externalService';
 // service is unavailable - a missing widget should never look broken.
 export default function WeatherCard({ lat, lng }) {
   const hasCoords = typeof lat === 'number' && typeof lng === 'number';
-  const { data } = useFetch(() => externalService.getWeather(lat, lng), [hasCoords, lat, lng]);
+  const { data } = useFetch(
+    () => (hasCoords ? externalService.getWeather(lat, lng) : Promise.resolve(null)),
+    [hasCoords, lat, lng]
+  );
 
   if (!hasCoords || !data) return null;
 

@@ -7,7 +7,10 @@ import externalService from '../../services/externalService';
 // unavailable - same fail-soft, self-hiding convention as WeatherCard.
 export default function AirQualityCard({ lat, lng }) {
   const hasCoords = typeof lat === 'number' && typeof lng === 'number';
-  const { data } = useFetch(() => externalService.getAirQuality(lat, lng), [hasCoords, lat, lng]);
+  const { data } = useFetch(
+    () => (hasCoords ? externalService.getAirQuality(lat, lng) : Promise.resolve(null)),
+    [hasCoords, lat, lng]
+  );
 
   if (!hasCoords || !data) return null;
 
