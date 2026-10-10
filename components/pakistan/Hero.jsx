@@ -19,7 +19,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-charcoal-950 text-white">
+    <section className="relative flex min-h-[100vh] items-center overflow-hidden bg-charcoal-950 text-white">
       <img
         src={placeholderImage(PLACEHOLDER_IDS.hero, 1920, 1280)}
         alt="Mountain landscape of northern Pakistan at golden hour"
