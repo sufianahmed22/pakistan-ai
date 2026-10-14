@@ -3,733 +3,733 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>http://localhost:5173/</loc>
+    <loc>https://pakistan-ai.netlify.app/</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/explore</loc>
+    <loc>https://pakistan-ai.netlify.app/explore</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/regions</loc>
+    <loc>https://pakistan-ai.netlify.app/regions</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities</loc>
+    <loc>https://pakistan-ai.netlify.app/cities</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places</loc>
+    <loc>https://pakistan-ai.netlify.app/places</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/tourism</loc>
+    <loc>https://pakistan-ai.netlify.app/tourism</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/mountains</loc>
+    <loc>https://pakistan-ai.netlify.app/mountains</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/rivers</loc>
+    <loc>https://pakistan-ai.netlify.app/rivers</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/history</loc>
+    <loc>https://pakistan-ai.netlify.app/history</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/culture</loc>
+    <loc>https://pakistan-ai.netlify.app/culture</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/geography</loc>
+    <loc>https://pakistan-ai.netlify.app/geography</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/statistics</loc>
+    <loc>https://pakistan-ai.netlify.app/statistics</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/facts</loc>
+    <loc>https://pakistan-ai.netlify.app/facts</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/ask</loc>
+    <loc>https://pakistan-ai.netlify.app/ask</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/about</loc>
+    <loc>https://pakistan-ai.netlify.app/about</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/faq</loc>
+    <loc>https://pakistan-ai.netlify.app/faq</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/contact</loc>
+    <loc>https://pakistan-ai.netlify.app/contact</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/regions/punjab</loc>
+    <loc>https://pakistan-ai.netlify.app/regions/punjab</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/regions/sindh</loc>
+    <loc>https://pakistan-ai.netlify.app/regions/sindh</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/regions/khyber-pakhtunkhwa</loc>
+    <loc>https://pakistan-ai.netlify.app/regions/khyber-pakhtunkhwa</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/regions/balochistan</loc>
+    <loc>https://pakistan-ai.netlify.app/regions/balochistan</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/regions/gilgit-baltistan</loc>
+    <loc>https://pakistan-ai.netlify.app/regions/gilgit-baltistan</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/regions/azad-jammu-kashmir</loc>
+    <loc>https://pakistan-ai.netlify.app/regions/azad-jammu-kashmir</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/regions/islamabad-capital-territory</loc>
+    <loc>https://pakistan-ai.netlify.app/regions/islamabad-capital-territory</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/karachi</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/karachi</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/lahore</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/lahore</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/islamabad</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/islamabad</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/rawalpindi</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/rawalpindi</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/faisalabad</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/faisalabad</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/multan</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/multan</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/peshawar</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/peshawar</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/quetta</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/quetta</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/sialkot</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/sialkot</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/hyderabad</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/hyderabad</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/gujranwala</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/gujranwala</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/skardu</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/skardu</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/gilgit</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/gilgit</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/sukkur</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/sukkur</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/larkana</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/larkana</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/nawabshah</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/nawabshah</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/bahawalpur</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/bahawalpur</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/sargodha</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/sargodha</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/jhelum</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/jhelum</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/mardan</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/mardan</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/abbottabad</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/abbottabad</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/mingora</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/mingora</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/dera-ismail-khan</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/dera-ismail-khan</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/gwadar</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/gwadar</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/ziarat</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/ziarat</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/karimabad</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/karimabad</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/muzaffarabad</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/muzaffarabad</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/cities/mirpur</loc>
+    <loc>https://pakistan-ai.netlify.app/cities/mirpur</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/hunza-valley</loc>
+    <loc>https://pakistan-ai.netlify.app/places/hunza-valley</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/skardu-destination</loc>
+    <loc>https://pakistan-ai.netlify.app/places/skardu-destination</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/swat-valley</loc>
+    <loc>https://pakistan-ai.netlify.app/places/swat-valley</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/chitral</loc>
+    <loc>https://pakistan-ai.netlify.app/places/chitral</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/naran</loc>
+    <loc>https://pakistan-ai.netlify.app/places/naran</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/kaghan-valley</loc>
+    <loc>https://pakistan-ai.netlify.app/places/kaghan-valley</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/fairy-meadows</loc>
+    <loc>https://pakistan-ai.netlify.app/places/fairy-meadows</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/neelum-valley</loc>
+    <loc>https://pakistan-ai.netlify.app/places/neelum-valley</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/murree</loc>
+    <loc>https://pakistan-ai.netlify.app/places/murree</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/mohenjo-daro</loc>
+    <loc>https://pakistan-ai.netlify.app/places/mohenjo-daro</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/taxila</loc>
+    <loc>https://pakistan-ai.netlify.app/places/taxila</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/rohtas-fort</loc>
+    <loc>https://pakistan-ai.netlify.app/places/rohtas-fort</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/badshahi-mosque</loc>
+    <loc>https://pakistan-ai.netlify.app/places/badshahi-mosque</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/faisal-mosque</loc>
+    <loc>https://pakistan-ai.netlify.app/places/faisal-mosque</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/lahore-fort</loc>
+    <loc>https://pakistan-ai.netlify.app/places/lahore-fort</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/minar-e-pakistan</loc>
+    <loc>https://pakistan-ai.netlify.app/places/minar-e-pakistan</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/pakistan-monument</loc>
+    <loc>https://pakistan-ai.netlify.app/places/pakistan-monument</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/mazar-e-quaid</loc>
+    <loc>https://pakistan-ai.netlify.app/places/mazar-e-quaid</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/makli-necropolis</loc>
+    <loc>https://pakistan-ai.netlify.app/places/makli-necropolis</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/deosai-national-park</loc>
+    <loc>https://pakistan-ai.netlify.app/places/deosai-national-park</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/attabad-lake</loc>
+    <loc>https://pakistan-ai.netlify.app/places/attabad-lake</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/khunjerab-pass</loc>
+    <loc>https://pakistan-ai.netlify.app/places/khunjerab-pass</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/kumrat-valley</loc>
+    <loc>https://pakistan-ai.netlify.app/places/kumrat-valley</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/shandur-pass</loc>
+    <loc>https://pakistan-ai.netlify.app/places/shandur-pass</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/pir-chinasi</loc>
+    <loc>https://pakistan-ai.netlify.app/places/pir-chinasi</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/harappa</loc>
+    <loc>https://pakistan-ai.netlify.app/places/harappa</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/takht-i-bahi</loc>
+    <loc>https://pakistan-ai.netlify.app/places/takht-i-bahi</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/ranikot-fort</loc>
+    <loc>https://pakistan-ai.netlify.app/places/ranikot-fort</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/derawar-fort</loc>
+    <loc>https://pakistan-ai.netlify.app/places/derawar-fort</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/katas-raj-temples</loc>
+    <loc>https://pakistan-ai.netlify.app/places/katas-raj-temples</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/khewra-salt-mine</loc>
+    <loc>https://pakistan-ai.netlify.app/places/khewra-salt-mine</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/wazir-khan-mosque</loc>
+    <loc>https://pakistan-ai.netlify.app/places/wazir-khan-mosque</loc>
     <lastmod>2026-10-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/hingol-national-park</loc>
+    <loc>https://pakistan-ai.netlify.app/places/hingol-national-park</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/places/gorakh-hill-station</loc>
+    <loc>https://pakistan-ai.netlify.app/places/gorakh-hill-station</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/mountains/k2</loc>
+    <loc>https://pakistan-ai.netlify.app/mountains/k2</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/mountains/nanga-parbat</loc>
+    <loc>https://pakistan-ai.netlify.app/mountains/nanga-parbat</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/mountains/gasherbrum-i</loc>
+    <loc>https://pakistan-ai.netlify.app/mountains/gasherbrum-i</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/mountains/broad-peak</loc>
+    <loc>https://pakistan-ai.netlify.app/mountains/broad-peak</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/mountains/gasherbrum-ii</loc>
+    <loc>https://pakistan-ai.netlify.app/mountains/gasherbrum-ii</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/mountains/rakaposhi</loc>
+    <loc>https://pakistan-ai.netlify.app/mountains/rakaposhi</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/mountains/tirich-mir</loc>
+    <loc>https://pakistan-ai.netlify.app/mountains/tirich-mir</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/rivers/indus-river</loc>
+    <loc>https://pakistan-ai.netlify.app/rivers/indus-river</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/rivers/jhelum-river</loc>
+    <loc>https://pakistan-ai.netlify.app/rivers/jhelum-river</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/rivers/chenab-river</loc>
+    <loc>https://pakistan-ai.netlify.app/rivers/chenab-river</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/rivers/ravi-river</loc>
+    <loc>https://pakistan-ai.netlify.app/rivers/ravi-river</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/rivers/sutlej-river</loc>
+    <loc>https://pakistan-ai.netlify.app/rivers/sutlej-river</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/rivers/kabul-river</loc>
+    <loc>https://pakistan-ai.netlify.app/rivers/kabul-river</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/rivers/swat-river</loc>
+    <loc>https://pakistan-ai.netlify.app/rivers/swat-river</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/mystical-soul-sufism-qawwali-pakistan</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/mystical-soul-sufism-qawwali-pakistan</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/culture/mystical-soul-sufism-qawwali-pakistan</loc>
+    <loc>https://pakistan-ai.netlify.app/culture/mystical-soul-sufism-qawwali-pakistan</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/truck-art-pakistan-moving-canvases</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/truck-art-pakistan-moving-canvases</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/culture/truck-art-pakistan-moving-canvases</loc>
+    <loc>https://pakistan-ai.netlify.app/culture/truck-art-pakistan-moving-canvases</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/weaving-identity-ajrak-pashmina-regional-costumes</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/weaving-identity-ajrak-pashmina-regional-costumes</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/culture/weaving-identity-ajrak-pashmina-regional-costumes</loc>
+    <loc>https://pakistan-ai.netlify.app/culture/weaving-identity-ajrak-pashmina-regional-costumes</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/culinary-journey-spices-flavors-street-food</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/culinary-journey-spices-flavors-street-food</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/culture/culinary-journey-spices-flavors-street-food</loc>
+    <loc>https://pakistan-ai.netlify.app/culture/culinary-journey-spices-flavors-street-food</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/festivals-joy-basant-shandur-eid-celebrations</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/festivals-joy-basant-shandur-eid-celebrations</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/culture/festivals-joy-basant-shandur-eid-celebrations</loc>
+    <loc>https://pakistan-ai.netlify.app/culture/festivals-joy-basant-shandur-eid-celebrations</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/literary-giants-iqbal-faiz-manto</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/literary-giants-iqbal-faiz-manto</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/culture/literary-giants-iqbal-faiz-manto</loc>
+    <loc>https://pakistan-ai.netlify.app/culture/literary-giants-iqbal-faiz-manto</loc>
     <lastmod>2026-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/history-indus-valley-civilization</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/history-indus-valley-civilization</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/history-gandhara-civilization</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/history-gandhara-civilization</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/history-arrival-of-islam-delhi-sultanate</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/history-arrival-of-islam-delhi-sultanate</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/history-mughal-era-empire</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/history-mughal-era-empire</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/history-1857-war-aligarh-movement</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/history-1857-war-aligarh-movement</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/history-pakistan-movement-1940-resolution</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/history-pakistan-movement-1940-resolution</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/history-independence-partition-1947</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/history-independence-partition-1947</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/history-1973-constitution-modern-era</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/history-1973-constitution-modern-era</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/conquering-karakoram-crown-northern-pakistan</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/conquering-karakoram-crown-northern-pakistan</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://localhost:5173/articles/cpec-infrastructure-growth-pakistan</loc>
+    <loc>https://pakistan-ai.netlify.app/articles/cpec-infrastructure-growth-pakistan</loc>
     <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
