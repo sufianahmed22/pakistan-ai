@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-ARG VITE_API_URL=http://localhost:5000/api
+ARG VITE_API_URL=https://pakistan-ai.netlify.app/api
 ENV VITE_API_URL=$VITE_API_URL
 RUN npm run build
 

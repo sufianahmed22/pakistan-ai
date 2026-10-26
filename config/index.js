@@ -16,7 +16,7 @@ export const SITE_URL = (
   import.meta.env.VITE_APP_URL ||
   (typeof window !== 'undefined' && window.location?.origin
     ? window.location.origin
-    : 'http://localhost:5173')
+    : 'https://pakistan-ai.netlify.app')
 ).replace(/\/+$/, '');
 
 /**

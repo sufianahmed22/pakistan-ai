@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Globe, Mail, Code2, Sparkles, ExternalLink, Terminal } from 'lucide-react';
+import { Github, Linkedin, Globe, Mail, Code2, Sparkles, ExternalLink, Terminal, MessageCircle } from 'lucide-react';
 import SectionHeading from '../ui/SectionHeading';
 import adminService from '../../services/adminService';
 
@@ -13,6 +13,7 @@ const DEFAULT_DEVELOPER = {
   linkedin: 'https://linkedin.com',
   website: 'https://pakistan.techniiva.stream',
   email: 'contact@techniiva.stream',
+  whatsapp: '+92 342 4839629',
   skills: ['Full-Stack Development', 'React & Tailwind', 'Node.js & Express', 'Vector Search AI', 'Cloud & DevOps'],
 };
 
@@ -35,6 +36,7 @@ export default function DeveloperSection({ className = '', bgLight = true }) {
             linkedin: data.linkedin || DEFAULT_DEVELOPER.linkedin,
             website: data.website || DEFAULT_DEVELOPER.website,
             email: data.email || DEFAULT_DEVELOPER.email,
+            whatsapp: data.whatsapp || DEFAULT_DEVELOPER.whatsapp,
             skills: Array.isArray(data.skills) && data.skills.length > 0 ? data.skills : DEFAULT_DEVELOPER.skills,
           });
         }
@@ -187,6 +189,19 @@ export default function DeveloperSection({ className = '', bgLight = true }) {
                     >
                       <Mail className="h-3.5 w-3.5" />
                       <span>{developer.email}</span>
+                    </a>
+                  )}
+
+                  {developer.whatsapp && (
+                    <a
+                      href={`https://wa.me/${developer.whatsapp.replace(/[^0-9]/g, '')}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-lg border border-emerald-500/30 bg-emerald-600/10 px-3 py-1.5 text-xs font-medium text-emerald-800 transition-colors hover:bg-emerald-600/20 dark:border-emerald-500/30 dark:bg-emerald-500/10 dark:text-emerald-300 dark:hover:bg-emerald-500/20"
+                      title={`WhatsApp: ${developer.whatsapp}`}
+                    >
+                      <MessageCircle className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+                      <span>WhatsApp</span>
                     </a>
                   )}
                 </div>

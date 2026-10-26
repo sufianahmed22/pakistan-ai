@@ -13,6 +13,7 @@ import {
   Waves,
   Newspaper,
   CheckCircle2,
+  MessageCircle,
 } from 'lucide-react';
 import AdminPageHeader from '../../components/admin/AdminPageHeader';
 import Tabs from '../../components/kokonut/Tabs';
@@ -237,7 +238,18 @@ export default function AdminSettings() {
                   />
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <Input
+                    label="WhatsApp Number"
+                    value={form.developerInfo?.whatsapp ?? ''}
+                    onChange={(e) =>
+                      setForm((f) => ({
+                        ...f,
+                        developerInfo: { ...(f.developerInfo || {}), whatsapp: e.target.value },
+                      }))
+                    }
+                    placeholder="e.g. +92 342 4839629"
+                  />
                   <Input
                     label="Portfolio / Website"
                     value={form.developerInfo?.website ?? ''}
@@ -249,6 +261,9 @@ export default function AdminSettings() {
                     }
                     placeholder="https://pakistan.techniiva.stream"
                   />
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <Input
                     label="GitHub Profile"
                     value={form.developerInfo?.github ?? ''}
@@ -328,6 +343,12 @@ export default function AdminSettings() {
                     </span>
                   ))}
                 </div>
+                {form.developerInfo?.whatsapp && (
+                  <div className="flex items-center gap-1.5 text-xs text-emerald-300 font-mono pt-1">
+                    <MessageCircle className="h-3.5 w-3.5 text-emerald-400" />
+                    <span>WhatsApp: {form.developerInfo.whatsapp}</span>
+                  </div>
+                )}
               </div>
             </div>
           </div>

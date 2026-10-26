@@ -84,11 +84,6 @@ export default function Home() {
       <PopularQuestions />
       <TelegramCTA />
      
-      {/* Commented out secondary sections*/}
-      <CultureFoodTeaser />
-      <PopularQuestions />
-      <TelegramCTA />
-      
 
       {/* 5. Creator & Developer Section */}
       <DeveloperSection />
