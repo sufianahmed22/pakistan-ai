@@ -86,7 +86,7 @@ export default function Register() {
 
   return (
     <div className="section flex min-h-[80vh] items-center justify-center bg-charcoal-50/40">
-      <PageSEO title="Create an Account" description="Create a free Pakistan AI account to save conversations and favorite places." />
+      <PageSEO noindex title="Create an Account" description="Create a free Pakistan AI account to save conversations and favorite places." />
       <Card className="w-full max-w-md">
         <h1 className="text-h3 mb-1">Create your account</h1>
         <p className="text-body mb-6">Join Pakistan AI to save conversations and places.</p>

@@ -1,1 +1,25 @@
-/*    /index.html   200
+# Pre-rendered pages (dist/<route>/index.html) are served as-is; static files win over rules.
+# /culture/:slug renders the same article as /articles/:slug - consolidate to one URL.
+/culture/:slug        /articles/:slug        301
+
+# Content added after the last deploy has no pre-rendered file yet: serve the SPA shell
+# (the app shows a real "not found" page + noindex if the slug does not exist).
+/cities/*             /app-shell.html        200
+/places/*             /app-shell.html        200
+/regions/*            /app-shell.html        200
+/mountains/*          /app-shell.html        200
+/rivers/*             /app-shell.html        200
+/articles/*           /app-shell.html        200
+
+# Private / app-only routes: SPA shell (noindex via _headers).
+/dashboard            /app-shell.html        200
+/dashboard/*          /app-shell.html        200
+/admin                /app-shell.html        200
+/admin/*              /app-shell.html        200
+/login                /app-shell.html        200
+/register             /app-shell.html        200
+/forgot-password      /app-shell.html        200
+/reset-password       /app-shell.html        200
+
+# Everything else is a real 404 (no more soft-404s).
+/*                    /404.html              404

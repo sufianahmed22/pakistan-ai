@@ -18,8 +18,11 @@ export default function PageSEO({
   naturalFeature,
   faqItems,
   keywords,
+  noindex = false,
+  // While true (data still loading) render nothing so the pre-rendered <head> tags stay in place.
+  pending = false,
 }) {
-  const fullTitle = title ? `${title} | ${APP_NAME}` : `${APP_NAME} — Discover Pakistan. Ask Anything.`;
+  const fullTitle = title ? (title.includes(APP_NAME) ? title : `${title} | ${APP_NAME}`) : `${APP_NAME} — Discover Pakistan. Ask Anything.`;
   const canonicalUrl = canonical
     ? canonical.startsWith('http')
       ? canonical
@@ -166,13 +169,15 @@ export default function PageSEO({
     return list;
   }, [breadcrumbs, article, place, naturalFeature, faqItems, schema, title, description, canonicalUrl, resolvedImage]);
 
+  if (pending) return null;
+
   return (
     <Helmet>
       {/* Standard Meta Tags */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonicalUrl} />
-      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
       {keywords && <meta name="keywords" content={Array.isArray(keywords) ? keywords.join(', ') : keywords} />}
 
       {/* Open Graph Meta Tags (Facebook, LinkedIn, WhatsApp) */}

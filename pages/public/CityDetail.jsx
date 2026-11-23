@@ -23,6 +23,8 @@ export default function CityDetail() {
   return (
     <div>
       <PageSEO
+        pending={loading && !city}
+        noindex={!loading && !city}
         title={city?.name ? `${city.name} — City Guide & Highlights` : 'City'}
         description={city?.description || `Explore ${city?.name}, Pakistan — history, geography, attractions, and cultural highlights.`}
         canonical={`/cities/${slug}`}

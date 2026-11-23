@@ -30,6 +30,8 @@ export default function MountainDetail() {
   return (
     <div>
       <PageSEO
+        pending={loading && !mountain}
+        noindex={!loading && !mountain}
         title={mountain?.name ? `${mountain.name} (${mountain.elevationMeters?.toLocaleString()}m) - Peak & Climbing Guide` : 'Mountain Peak'}
         description={mountain?.description || `${mountain?.name || 'Mountain'} rises to an elevation of ${mountain?.elevationMeters} meters in the ${mountain?.range} range of Pakistan.`}
         canonical={`/mountains/${slug}`}

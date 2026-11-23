@@ -21,6 +21,8 @@ export default function RiverDetail() {
   return (
     <div>
       <PageSEO
+        pending={loading && !river}
+        noindex={!loading && !river}
         title={river?.name ? `${river.name} (${river.lengthKm?.toLocaleString()} km) - Rivers of Pakistan` : 'River Detail'}
         description={river?.importance || river?.description || `${river?.name || 'River'} is one of Pakistan's vital waterways spanning ${river?.lengthKm} kilometers.`}
         canonical={`/rivers/${slug}`}

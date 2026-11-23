@@ -65,7 +65,7 @@ export default function Login() {
 
   return (
     <div className="section flex min-h-[80vh] items-center justify-center bg-charcoal-50/40">
-      <PageSEO title="Login" description="Log in to Pakistan AI to save conversations and personalize your experience." />
+      <PageSEO noindex title="Login" description="Log in to Pakistan AI to save conversations and personalize your experience." />
       <Card className="w-full max-w-md">
         <h1 className="text-h3 mb-1">Welcome back</h1>
         <p className="text-body mb-6">Log in to continue exploring Pakistan.</p>

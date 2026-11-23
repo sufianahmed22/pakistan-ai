@@ -29,6 +29,8 @@ export default function PlaceDetail() {
   return (
     <div>
       <PageSEO
+        pending={loading && !place}
+        noindex={!loading && !place}
         title={place?.name ? `${place.name} — Places to Visit in Pakistan` : 'Destination'}
         description={place?.description || `Plan your visit to ${place?.name}, Pakistan — highlights, travel guide, history, and directions.`}
         canonical={`/places/${slug}`}

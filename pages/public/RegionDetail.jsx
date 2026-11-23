@@ -35,6 +35,8 @@ export default function RegionDetail() {
   return (
     <div>
       <PageSEO
+        pending={loading && !region}
+        noindex={!loading && !region}
         title={region?.name ? `${region.name} — Provinces & Territories of Pakistan` : 'Region'}
         description={region?.description || `Discover ${region?.name}, Pakistan — history, geography, major cities, and culture.`}
         canonical={`/regions/${slug}`}

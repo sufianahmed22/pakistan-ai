@@ -54,7 +54,7 @@ export default function ResetPassword() {
 
   return (
     <div className="section flex min-h-[80vh] items-center justify-center bg-charcoal-50/40">
-      <PageSEO title="Reset Password" description="Choose a new password for your Pakistan AI account." />
+      <PageSEO noindex title="Reset Password" description="Choose a new password for your Pakistan AI account." />
       <Card className="w-full max-w-md">
         <h1 className="text-h3 mb-1">Set a new password</h1>
         {!token && <p className="mb-6 rounded-xl bg-amber-50 p-4 text-amber-800">This reset link is missing a token — request a new one.</p>}

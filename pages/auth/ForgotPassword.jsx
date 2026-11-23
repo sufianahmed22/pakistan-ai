@@ -28,7 +28,7 @@ export default function ForgotPassword() {
 
   return (
     <div className="section flex min-h-[80vh] items-center justify-center bg-charcoal-50/40">
-      <PageSEO title="Forgot Password" description="Reset your Pakistan AI account password." />
+      <PageSEO noindex title="Forgot Password" description="Reset your Pakistan AI account password." />
       <Card className="w-full max-w-md">
         <h1 className="text-h3 mb-1">Reset your password</h1>
         <p className="text-body mb-6">Enter your email and we'll send you a reset link.</p>

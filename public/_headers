@@ -1,0 +1,18 @@
+/dashboard
+  X-Robots-Tag: noindex, nofollow
+/dashboard/*
+  X-Robots-Tag: noindex, nofollow
+/admin
+  X-Robots-Tag: noindex, nofollow
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+/login
+  X-Robots-Tag: noindex, follow
+/register
+  X-Robots-Tag: noindex, follow
+/forgot-password
+  X-Robots-Tag: noindex, follow
+/reset-password
+  X-Robots-Tag: noindex, follow
+/404.html
+  X-Robots-Tag: noindex

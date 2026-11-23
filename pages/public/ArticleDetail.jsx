@@ -37,6 +37,8 @@ export default function ArticleDetail() {
   return (
     <div>
       <PageSEO
+        pending={loading && !article}
+        noindex={!loading && !article}
         title={article?.title ? `${article.title} — Pakistan AI Encyclopedia` : 'Article Detail'}
         description={article?.summary || (article?.content ? article.content.slice(0, 160) : 'Explore articles on Pakistani culture, history, and traditions.')}
         canonical={`/articles/${slug}`}
