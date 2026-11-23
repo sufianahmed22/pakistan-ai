@@ -207,9 +207,7 @@ This ensures direct URLs (e.g., `/destinations`, `/dashboard/settings`, `/ask`) 
 
 - **Guest**: Access public pages and send up to 3 AI questions.
 - **Registered User**: Log in with Email or Google, send up to 10 questions per window, bookmark places, view conversation history, and submit reviews.
-- **Admin / Staff**: Full access to the `/admin` portal to edit entities, manage tickets, refresh AI knowledge, and configure system settings. Default seeded credentials:
-  - **Email**: `admin@pakistan-ai.app`
-  - **Password**: `123456`
+- **Admin / Staff**: Full access to the `/admin` portal to edit entities, manage tickets, refresh AI knowledge, and configure system settings.
 
 ---
 
